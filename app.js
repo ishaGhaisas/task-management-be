@@ -33,3 +33,6 @@ app.post('/', (req, res)=>{
 });
 
 require("./routes/auth")(app);
+require("./routes/user")(app); 
+require("./routes/projects")(app); 
+require("./routes/tasks")(app); 

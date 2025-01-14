@@ -45,7 +45,7 @@ module.exports = app => {
             });
             res.status(200).send({ success: true,  projects });
         } catch (error) {
-            console.error('Error fetching projects:', error); // Log the error for debugging
+            console.error('Error fetching projects:', error);
             res.status(500).send({ success: false, message: 'Error fetching projects', error });
         }
 
